@@ -1,13 +1,13 @@
 class Timer{
   float m;
-float circleX;
-boolean change;
-boolean hasMoved;
-float timeStart;
-float timeElapsed;
+  float circleX;
+  boolean change;
+  boolean hasMoved;
+  float timeStart;
+  float timeElapsed;
 
-Timer() {
-  timeStart = millis();
+  Timer() {
+    timeStart = millis();
 }
 
 void update(){
@@ -31,20 +31,19 @@ void update(){
 
 void timer(){
   
- stroke(255);
- strokeWeight(3);
+  stroke(255);
+  strokeWeight(3);
   fill(255);
   line(20, height-20, 480, height -20);
-  
   
   circleX = map(m, 0, 192000, 20, 480);
   
   if(m >= 192000){
    circleX = 480; 
   }
-  stroke(255, 0, 100);
-  
+ // stroke(255, 0, 100);
   line(20, height-20, circleX, height-20);
+  
   strokeWeight(2);
   circle(circleX, height-20, 20);
 }

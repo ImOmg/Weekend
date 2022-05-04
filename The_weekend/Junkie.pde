@@ -48,7 +48,8 @@ void headphones(float s, int x, int y){
   stroke(0, 200, 255);
   strokeWeight(2);
   noFill();
-  arc(x, y, s*width/233.333, s*width/200, PI, TWO_PI);
+  //arc(x, y, s*width/233.333, s*width/200, PI, TWO_PI);
+  arc(x, y-20, s*width/250.333, s*width/200, PI, TWO_PI);
   fill(0);
   arc(x-width/5*s/100, y, s*width/600, s*width/600, HALF_PI, HALF_PI*3, CHORD);
   arc(x+width/5*s/100, y, s*width/600, s*width/600, -HALF_PI, HALF_PI, CHORD);
